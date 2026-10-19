@@ -1,0 +1,7 @@
+---
+- name: Self-Heal NGINX Service
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Restart stopped NGINX container
+      shell: sudo docker start my-nginx
